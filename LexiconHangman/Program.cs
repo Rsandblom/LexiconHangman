@@ -28,7 +28,7 @@ namespace LexiconHangman
             int numberOfGuessesLeft = 10;
             StringBuilder incorrectGuesses = new StringBuilder();
             
-            int randomWordIndex = new Random().Next(0, 9);
+            int randomWordIndex = new Random().Next(0, 10);
             string wordToGuess = WordCollection.GetStringFromWordArrayByIndex(randomWordIndex).ToUpper();
 
             char[] guessedLettersArray = new char[wordToGuess.Length];
